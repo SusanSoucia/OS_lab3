@@ -57,7 +57,7 @@ void task_foo1(void *pv)
     // while(1)
     //     ;
     struct passArg* args = (struct passArg*)pv; 
-    insertionSort(args->array,args->size,args->lEdge);    //调用排序函数
+    bubbleSort(args->array,args->size,args->lEdge);    //调用排序函数
     
     task_exit(0);
     while(1)
@@ -89,7 +89,7 @@ void task_foo1(void *pv)
 void task_foo3(void *pv)
 {
     struct passArg* args = (struct passArg*)pv; 
-    insertionSort(args->array,args->size,args->lEdge);    //调用排序函数
+    bubbleSort(args->array,args->size,args->lEdge);    //调用排序函数
     while(1);
     task_exit(0);
 }
